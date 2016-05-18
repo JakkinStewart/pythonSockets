@@ -51,16 +51,25 @@ Line 1 should be pretty obvious. It imports the socket library. Yay!
 
 ###### Line 2
 Line 2 is where things really get started. What happens is we create a variable to contain the function "socket.socket()". (Otherwise, we'd have to type everything out. Instead of being "sock.connect((ip, 80))", we would have to type "socket.socket().connect((ip, 80))". It saves our wrists from doing too much work.)
+
 Now, what happens inside "socket.socket()"? Why do we need it?
+
 It is a function that contains several hidden parameters which define what kind of socket it will be. The full list of hidden parameters is found in the docs (ugh!). By typing in "socket.socket()" we initialized this. 
+
 ```
 socket.socket(family=AF_INET, type=SOCK_STREAM, proto=0, fileno=None)
 ```
+
 Breaking it down, we'll start with the family parameter.
+
 Using the family "AF_INET" means that we'll be using the normal IPv4 addresses we are used to. IPv4 is what we will focus on; however, there are other families that are available. It is best to be aware of them.
+
 AF_INET6 is used mainly for IPv6, which will become more prevelant in the future.
+
 AF_UNIX, which is used for different processes on the machine to communicate to each other. This family generally does not communicate beyond their host machine.
+
 AF_CAN allows communication over CAN interfaces.
+
 AF_RDS (which stands for Reliable Datagram Sockets (RDS)), is a protocol for delivering datagrams.
 
 As a note, there are also PF_* prefixes. The main difference between AF and PF is that AF stands for "Address Family" and PF for "Protocol Family".
