@@ -81,7 +81,5 @@ Using the family "AF_INET" means that we'll be using the normal IPv4 addresses w
 
  - AF_RDS (which stands for Reliable Datagram Sockets (RDS)), is a protocol for delivering datagrams. (Rather reliably, it seems.)
 
-```
 As a note, there are also PF_* prefixes. AF stands for "Address Family" and PF stands for "Protocol Family".
-```
 
