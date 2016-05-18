@@ -64,13 +64,13 @@ Breaking it down, we'll start with the family parameter.
 
 Using the family "AF_INET" means that we'll be using the normal IPv4 addresses we are used to. IPv4 is what we will focus on; however, there are other families that are available. It is best to be aware of them.
 
-AF_INET6 is used mainly for IPv6, which will become more prevelant in the future.
+ - AF_INET6 is used mainly for IPv6, which will become more prevelant in the future.
 
-AF_UNIX, which is used for different processes on the machine to communicate to each other. This family generally does not communicate beyond their host machine.
+ - AF_UNIX, which is used for different processes on the machine to communicate to each other. This family generally does not communicate beyond their host machine.
 
-AF_CAN allows communication over CAN interfaces.
+ - AF_CAN allows communication over CAN interfaces.
 
-AF_RDS (which stands for Reliable Datagram Sockets (RDS)), is a protocol for delivering datagrams.
+ - AF_RDS (which stands for Reliable Datagram Sockets (RDS)), is a protocol for delivering datagrams.
 
 As a note, there are also PF_* prefixes. The main difference between AF and PF is that AF stands for "Address Family" and PF for "Protocol Family".
 
