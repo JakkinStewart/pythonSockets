@@ -12,19 +12,19 @@ Virtually every server that the average user visits on the internet uses sockets
 
 So sockets are nice and make lives easier. How does that help with using them?
 
-Admittedly, not a lot. It gives the developer (or anyone curious enough) an idea of why sockets are so universal in our programming languages. There's a whole world revolving around sockets, but that goes too in depth for most people. For the insanely curious, look [here](http://compnetworking.about.com/od/itinformationtechnology/l/aa083100a.htm) for more on the socket world.
+Admittedly, not a lot. It gives the developer (or anyone curious enough) an idea of why sockets are so universal in our programming languages. There's a whole world revolving around sockets, but that goes too in depth for us right now. For the insanely curious, look [here](http://compnetworking.about.com/od/itinformationtechnology/l/aa083100a.htm) for more on the socket world.
 
 ### Time to get to the good stuff!
 
 Python is known for simplifying things, but in the case of sockets, it's actually quite low level. And to understand "low level", you'll need to understand "high level". The best thing is, "High level" is something that you do understand, you just don't understand it yet. ;-)
 
-To do a quick explanation of "high level", take a look at Siri or Google Now. You just speak to it and it will check Google for you. Easy, right?
+To do a quick explanation of "high level", take a look at Siri or Google Now. You just speak to it and it will check Google for you. Easy, right?i That is the essence of high level. You speak and it gets done. You don't even need to understand how it works.
 
-An explanation of "low level" could be you crafting the TCP packet before sending it on its merry way to Google's servers to request the information you want. Not nearly as easy to do. (And if you don't know what packets are, check [this](http://computer.howstuffworks.com/question525.htm). Its a good idea to know how a bomb works if you're going to defuse it.)
+Alternatively, "low level" could be you crafting the TCP packet before sending it on its merry way to Google's servers to request the information you want. Not nearly as easy to do. (And if you don't know what packets are, check [this](http://computer.howstuffworks.com/question525.htm). Its a good idea to know how a bomb works if you're going to defuse it.)
 
 [PICTURE]
 
-The last point I need to make before you see any code is that there are two types of sockets we'll be using.
+The last point I need to make before you see any code is that, while there are a bunch of different socket types, there are two types of sockets we'll be focusing on.
 
  - Client sockets
  - Server sockets
@@ -44,7 +44,7 @@ Now this code won't do much if you run it. It will open a connection to Scotch.i
 
 ##### Explanations
 
-Explanation time! Writing the program is all well and good, but what actually happened when you ran it?
+Explanation time! Writing the program is all well and good, but what actually happened when you ran it? It didn't have any output.
 
 Here's the code again with line numbers.
 ```
